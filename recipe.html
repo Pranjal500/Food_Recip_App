@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe Search</title>
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-side">
+            <!-- <i class="fa-solid fa-utensils" id="food-icon"></i> -->
+            <span id="food"><img src="./wonder.png" alt="img" width="220px"  ></span>
+        </div>
+        <!-- <div class="search-data">
+            <input type="text" name="searchitem" placeholder="search for over 1,00,000 recipes " id="searchinput"/>
+            <button id="search">Search</button>
+        </div> -->
+        <div class="search-data">
+        <input type="text"name="searchitem" placeholder="Search your favourite recipe" class="search-input"  id="searchinput"/>
+          <button  class="search-btn" id="search">
+            <i class="fas fa-search"> search</i>
+          </button>
+      </div>
+         
+
+            <div class="bookmarks">
+                <div class="childbookmark" id="childbookmark">
+                   Bookmarks list
+                </div>
+        </div>
+        <div class="add-recipe">
+            <button id="add-recipe"> <i class="fas fa-add"></i> ADD RECIPES</button>
+        </div> 
+
+    </div>
+    <div  class="pagination" id="pagination">
+   
+    </div>
+
+    <div class="two-container">
+        <div class="left-container" id="left-container">
+
+        </div>
+        <div class="right-container" id="right-container">
+            <i class="fa-solid fa-face-smile-wink" id="laugh"></i>
+           <span id="text">Start by searching for a recipe or an ingridient. Have fun! </span> 
+        </div>
+    </div>
+
+    <script type="module" src="controller.js"  ></script>
+</body>
+
+</html>
